@@ -17,3 +17,5 @@ class Client:
     def recv(self, size = 1024):
         #Получение сообщения от сервера
         return self.s.recv(size).decode(coding)
+
+client = Client()
