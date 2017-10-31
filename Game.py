@@ -1,24 +1,15 @@
-import WorldCL
-import network
-import socket
+#import Moduls
+#import network
 
-class World:
+class World():
 	def __init__(self):
 		a = []
-		with open('Cletki.txt',r) as CLETKI:
+		with open('Cletki.txt', 'r') as CLETKI:
 			for line in CLETKI:
-				a.append(
-					lambda line: 
-					x=line.split()[0] 
-					y=line.split()[1] 
-					z=line.split()[2:]
-					return([x,y,z])
-				 	)
-		for b in a: 
-			print(b)
-		g=input()
+				a += {tuple(line.split()[:2]) : tuple(line.split()[2:])}
+		print(a('1', '1'))
 
-	def askter(x,y):
-		return(self.WorldCL.terry(x,y))
+	#def askter(x,y):
+	#	return self.Moduls.terry(a[x,y])
 
 world = World()
