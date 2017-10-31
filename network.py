@@ -2,8 +2,6 @@ import socket
 
 class Server:
     timeout = 5
-    address = '127.0.0.1'
-    port = 1234
     players = 2
     coding = 'utf-8'
 
