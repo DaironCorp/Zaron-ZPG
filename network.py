@@ -29,7 +29,7 @@ class Server:
         #Авторизация клиента, возвращает login или 'error'
         self.send(conn, 'Введите логин и пароль (Через пробел): ')
         login, password = self.recv(conn).split()
-        with open('Passwords.txt', r) as f:
+        with open('Passwords.txt', 'r') as f:
             for line in f:
                 if login + ' ' + password == line:
                     return login
