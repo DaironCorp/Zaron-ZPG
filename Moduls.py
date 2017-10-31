@@ -1,21 +1,5 @@
 class Biom:
-	class SRD:
-		N = 1
-		li = 'комфортно'
-	class TEP:
-		N = 2
-		li = 'Жарко'
-	class HOL:
-		N = 3
-		li = 'холодно'
-	class VDA:
-		N = 4
-		li = 'море! тону'
+	biom = [(1,'комфортно'),(2,'Жарко'),(3,'холодно'),(4,'море! тону')]
 
 class LND:
-	class GOR:
-		li = 'высоко'
-	class RVN:
-		li = 'средне'
-	class NIZ:
-		li = 'низина'
+	Land = [(1,'высоко'),(2,'средне'),(3,'низина')]
