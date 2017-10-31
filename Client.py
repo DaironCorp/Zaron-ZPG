@@ -18,7 +18,7 @@ class Client:
     def recv(self, size = 1024):
         #Получение сообщения от сервера
         return self.s.recv(size).decode(coding)
-
+      
     def authorization(self):
         self.send(input(self.recv())) #'Введите логин и пароль (Через пробел): '
         msg = self.recv()
